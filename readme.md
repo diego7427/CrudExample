@@ -15,12 +15,10 @@ Method PUT to update a customer
 Method DELETE to delete a customer
 ...
 
-These requests are submitted to a service, called CustomerServer. The comunication with the service is made with DTO, java beans to separate the objects in the service and the objects that are persisted. Some methods are added just to add more operacions. Althouguh the exercise says nothig about, It is not allowed to insert two customers with the same name.If a ciustomer is tried to be inserted with empty notes, that notes will not be added. If a note is tenad of being deleted in the view is cleared, then is deleted. 
+These requests are submitted to a service, called CustomerServer. The comunication with the service is made with DTO, java beans to separate the objects in the service and the objects that are persisted. Some methods are added just to add more operacions. Althouguh the exercise says nothig about, It is not allowed to insert two customers with the same name.If a ciustomer is tried to be inserted with empty notes, that notes will not be added. If a note instead of being deleted in the view is cleared, as the note comes with no content is deleted. 
 
-The servce basically calls the persistency to store, delete, get or update the customers.
+The service basically calls the persistency to store, delete, get or update the customers.
 
-The persistency is made using JPA and Hibernate. To configure the database uses a yml file called application.yml inside the rsources folder.
-
-There are two different configurations for the local profile, using H2 database, and for a production enviroment one with info of MySQL.
+The persistency is made using JPA and Hibernate. To configure the database uses a yml file called application.yml inside the resources folder. In that file are two different configurations one for the local profile, using H2 database, and other for a production enviroment using MySQL.
 
 To execute the application it can be installed inside Eclipse, choose SpringBootaplication in the runAs choose CustomerCRUDApp.class and put local in the profile box. 

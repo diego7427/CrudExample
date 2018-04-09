@@ -7,9 +7,7 @@ import org.springframework.context.annotation.Import;
 import nz.co.propellerhead.springboot.configuration.JpaConfiguration;
 
 @Import(JpaConfiguration.class)
-@SpringBootApplication(scanBasePackages = { "nz.co.propellerhead.springboot" }) // same as @Configuration
-                                                                                // @EnableAutoConfiguration
-                                                                                // @ComponentScan
+@SpringBootApplication(scanBasePackages = { "nz.co.propellerhead.springboot" })
 public class CustomerCRUDApp {
 
     public static void main(final String[] args) {

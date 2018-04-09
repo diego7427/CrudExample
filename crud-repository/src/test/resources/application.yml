@@ -7,7 +7,7 @@ spring:
   profiles: local, default
 datasource:
   sampleapp:
-    url: jdbc:h2:~/test;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:~/test
     username: SA
     password:
     driverClassName: org.h2.Driver

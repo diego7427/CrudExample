@@ -13,6 +13,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.3.RELEASE</version>
+		<junit.version>4.9</junit.version>
 	</parent>
 
 	<properties>
@@ -32,6 +33,21 @@
 				<artifactId>commons-lang3</artifactId>
 				<version>3.5</version>
 			</dependency>
+
+			<!-- Test dependencies -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<scope>test</scope>			    
+				<version>1.5.3.RELEASE</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>1.9.3</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 	<modules>
@@ -39,5 +55,5 @@
 		<module>crud-repository</module>
 		<module>crud-services</module>
 	</modules>
-	
+
 </project>
